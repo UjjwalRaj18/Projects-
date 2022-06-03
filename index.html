@@ -13,7 +13,7 @@
         <span class="button plus">+</span>
         <span class="num">10</span>
         <h2>
-            <div style="word-spacing: 0.15em;">Current Counter:<span class="nums">1</span></div>
+            <div style="word-spacing: 0.15em;">Current Counter:<span class="nums">5</span></div>
         </h2>
     </div>
 <script>
@@ -28,11 +28,9 @@
         nums.innerText = (n>=1)? `${n}` :n;
     }
    let a = 10;
-   let b = 1;
-   plus.addEventListener('click',() => update(++a));
-   minus.addEventListener('click',() => update(--a));
-   plus.addEventListener('click',() => count(++b));
-   minus.addEventListener('click',() => count(++b));
+   let b = 5;
+   plus.addEventListener('click',() => update(a=a+b));
+   minus.addEventListener('click',() => update(a=a-b));
 </script>
 </body>
 </html>
